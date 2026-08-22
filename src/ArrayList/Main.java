@@ -110,5 +110,25 @@ public class Main {
         for(int j:list1){
             System.out.println(j);
         }
+
+        //10th
+        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1,5,4,7,3,54,21,49,32,1));
+        ArrayList<Integer> odd=new ArrayList<>();
+        ArrayList<Integer> even=new ArrayList<>();
+        for(int c:list){
+            if(c%2==0 && c!=0)
+                even.add(c);
+            else
+                odd.add(c);
+        }
+        System.out.println("Odd numbers:");
+        for(int d:odd){
+            System.out.print(d+" ");
+        }
+        System.out.println();
+        System.out.println("Even numbers:");
+        for(int e:even){
+            System.out.print(e+" ");
+        }
     }
 }
