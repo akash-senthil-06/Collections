@@ -46,5 +46,19 @@ public class Main {
         programming.add("C++");
         programming.add("C#");
         System.out.println(programming.contains("Java")?"Yes":"No");
+
+        //5th
+        ArrayList<Integer> mark=new ArrayList<>();
+        mark.add(56);
+        mark.add(23);
+        mark.add(58);
+        mark.add(19);
+        mark.add(65);
+        int max=mark.get(0);
+        for(int a:marks){
+            if(max<=a)
+                max=a;
+        }
+        System.out.println(max);
     }
 }
