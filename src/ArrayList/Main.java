@@ -25,5 +25,17 @@ public class Main {
             sum+=a;
         }
         System.out.println(sum);
+
+        //3rd
+        ArrayList<String> fruits=new ArrayList<>();
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("orange");
+        fruits.add("watermelon");
+        fruits.add("kiwi");
+        fruits.remove(2);
+        for(String a:fruits){
+            System.out.println(a);
+        }
     }
 }
