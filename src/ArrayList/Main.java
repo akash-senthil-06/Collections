@@ -37,5 +37,14 @@ public class Main {
         for(String a:fruits){
             System.out.println(a);
         }
+
+        //4th
+        ArrayList<String> programming=new ArrayList<>();
+        programming.add("C");
+        programming.add("Java");
+        programming.add("Python");
+        programming.add("C++");
+        programming.add("C#");
+        System.out.println(programming.contains("Java")?"Yes":"No");
     }
 }
