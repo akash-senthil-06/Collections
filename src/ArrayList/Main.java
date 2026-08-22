@@ -1,5 +1,5 @@
 package ArrayList;
-import java.util.ArrayList;
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //1st
@@ -60,5 +60,13 @@ public class Main {
                 max=a;
         }
         System.out.println(max);
+
+        //6th
+        country.add("asia");
+        country.add("zimbabe");
+        Collections.sort(country);
+        for(String a:country){
+            System.out.println(a);
+        }
     }
 }
