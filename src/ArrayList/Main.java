@@ -87,5 +87,17 @@ public class Main {
         for(int a:sort){
             System.out.println(a);
         }
+
+        //8th
+        ArrayList<Integer> a=new ArrayList<>();
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<5;i++){
+            int input=sc.nextInt();
+            a.add(input);
+        }
+        Collections.sort(a,Collections.reverseOrder());
+        for(int b:a){
+            System.out.println(b);
+        }
     }
 }
