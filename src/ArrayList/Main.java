@@ -12,5 +12,18 @@ public class Main {
         for(String a:country){
             System.out.println(a);
         }
+
+        //2nd
+        ArrayList<Integer> marks=new ArrayList<>();
+        marks.add(56);
+        marks.add(23);
+        marks.add(58);
+        marks.add(19);
+        marks.add(65);
+        int sum=0;
+        for(int a:marks){
+            sum+=a;
+        }
+        System.out.println(sum);
     }
 }
