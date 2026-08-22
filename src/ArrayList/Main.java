@@ -68,5 +68,24 @@ public class Main {
         for(String a:country){
             System.out.println(a);
         }
+
+        //7th
+        ArrayList<Integer> sort=new ArrayList<>();
+        sort.add(2);
+        sort.add(3);
+        sort.add(6);
+        sort.add(19);
+        sort.add(5);
+        sort.add(6);
+        for(int i=0;i<sort.size();i++){
+            for(int j=i+1;j<sort.size();j++){
+                if(sort.get(i)==sort.get(j)){
+                    sort.remove(j);
+                }
+            }
+        }
+        for(int a:sort){
+            System.out.println(a);
+        }
     }
 }
