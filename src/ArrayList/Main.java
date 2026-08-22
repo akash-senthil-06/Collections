@@ -89,15 +89,26 @@ public class Main {
         }
 
         //8th
-        ArrayList<Integer> a=new ArrayList<>();
-        Scanner sc=new Scanner(System.in);
-        for(int i=0;i<5;i++){
-            int input=sc.nextInt();
-            a.add(input);
+        // ArrayList<Integer> a=new ArrayList<>();
+        // Scanner sc=new Scanner(System.in);
+        // for(int i=0;i<5;i++){
+        //     int input=sc.nextInt();
+        //     a.add(input);
+        // }
+        // Collections.sort(a,Collections.reverseOrder());
+        // for(int b:a){
+        //     System.out.println(b);
+        // }
+
+        //9th
+        ArrayList<Integer> list1=new ArrayList<>(Arrays.asList(1,5,4,7,3));
+        ArrayList<Integer> list2=new ArrayList<>(Arrays.asList(54,21,49,32,1));
+        for(int i:list2){
+            list1.add(i);
         }
-        Collections.sort(a,Collections.reverseOrder());
-        for(int b:a){
-            System.out.println(b);
+        Collections.sort(list1);
+        for(int j:list1){
+            System.out.println(j);
         }
     }
 }
