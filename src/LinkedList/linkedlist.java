@@ -1,6 +1,9 @@
 package LinkedList;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
+import java.util.Queue;
+
 public class linkedlist{
     public static void main(String[] args) {
 
@@ -44,5 +47,24 @@ public class linkedlist{
         System.out.print("Enter a element: ");
         int element=sc.nextInt();
         System.err.println(nums.contains(element)?"Yes":"No");
+
+        //5th
+        Queue<String> bank=new LinkedList<>();
+        bank.add("Customer1");
+        bank.add("Customer2");
+        bank.add("Customer3");
+        bank.add("Customer4");
+        bank.add("Customer5");
+        System.out.println("Initially:"+bank);
+        bank.poll();
+        System.out.println("After serving customer 1:"+bank);
+        bank.poll();
+        System.out.println("After serving customer 2:"+bank);
+        bank.poll();
+        System.out.println("After serving customer 3:"+bank);
+        bank.poll();
+        System.out.println("After serving customer 4:"+bank);
+        bank.poll();
+        System.out.println("After serving customer 5:"+bank);
     }
 }
