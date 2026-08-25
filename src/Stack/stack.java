@@ -71,5 +71,14 @@ public class stack {
             }
             stack2.pop();
         }
+
+        //5th
+        int[] arr={1,2,3,4,5,6};
+        Stack<Integer> reversed_array=new Stack<>();
+        for(int i=arr.length-1;i>=0;i--){
+            reversed_array.push(arr[i]);
+        }
+        System.out.println("Array Elemets:"+arr);
+        System.out.println("Reversed array using stack: "+reversed_array);
     }
 }
