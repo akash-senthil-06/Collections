@@ -20,12 +20,23 @@ public class linkedlist{
         nums.add(4);
         nums.add(5);
         System.out.println("Before adding: "+nums);
-        nums.push(0);
-        nums.push(11);
-        nums.push(22);
+        nums.addFirst(0);
+        nums.addFirst(11);
+        nums.addFirst(22);
         nums.addLast(6);
         nums.addLast(7);
         nums.addLast(8);
         System.out.println("After adding: "+nums);
+
+        //3rd
+        LinkedList<String> colors=new LinkedList<>();
+        colors.add("black");
+        colors.add("white");
+        colors.add("red");
+        colors.add("blue");
+        System.out.println("Before removing: "+colors);
+        colors.removeFirst();
+        colors.removeLast();
+        System.out.println("After removing: "+colors);
     }
 }
