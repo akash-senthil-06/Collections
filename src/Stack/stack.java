@@ -113,5 +113,21 @@ public class stack {
         history.push("gpt");
         n_pops(history,3);
         System.out.println("After get back 3 times: "+history);
+
+        //8th
+        System.out.print("Enter a decimal number:");
+        int n=sc.nextInt();
+        Stack<Integer> binary=new Stack<>();
+        while(n>0){
+            binary.push(n%2);
+            n/=2;
+        }
+        while(true){
+            if(!binary.isEmpty())
+                System.out.print(binary.pop());
+            else
+                break;
+        }
+        
     }
 }
