@@ -40,5 +40,15 @@ public class stack {
         System.out.println("Peek city: "+cities.peek());
         two_pops(cities);
         System.out.println("After popping two cities: "+cities);
+
+        //3rd
+        Stack<Integer> stack1=new Stack<>();
+        System.out.println("Before pushing: ");
+        System.out.println(stack1.isEmpty()?"The stack is empty":"The stack is not empty");
+        stack1.push(1);
+        stack1.push(2);
+        stack1.push(3);
+        System.out.println("Ater pushing: ");
+        System.out.println(stack1.isEmpty()?"The stack is empty":"The stack is not empty");
     }
 }
