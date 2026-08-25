@@ -2,8 +2,8 @@ package Stack;
 import java.util.Stack;
 import java.util.Scanner;
 public class stack {
-    public static Stack<String> two_pops(Stack<String> a){
-        for(int i=0;i<2;i++){
+    public static Stack<String> n_pops(Stack<String> a,int n){
+        for(int i=0;i<n;i++){
             a.pop();
         }
         return a;
@@ -38,7 +38,7 @@ public class stack {
         //     two_pops(cities);
         // }
         System.out.println("Peek city: "+cities.peek());
-        two_pops(cities);
+        n_pops(cities,2);
         System.out.println("After popping two cities: "+cities);
 
         //3rd
@@ -103,5 +103,15 @@ public class stack {
                 right--;
             }
         }
+
+        //7th
+        Stack<String> history=new Stack<>();
+        history.push("google");
+        history.push("yt");
+        history.push("github");
+        history.push("linkedin");
+        history.push("gpt");
+        n_pops(history,3);
+        System.out.println("After get back 3 times: "+history);
     }
 }
