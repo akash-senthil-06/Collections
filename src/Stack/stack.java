@@ -1,7 +1,7 @@
 package Stack;
 import java.util.Stack;
+import java.util.Scanner;
 public class stack {
-
     public static Stack<String> two_pops(Stack<String> a){
         for(int i=0;i<2;i++){
             a.pop();
@@ -9,7 +9,7 @@ public class stack {
         return a;
     }
     public static void main(String[] args) {
-        
+        Scanner sc=new Scanner(System.in);
         //1st
         Stack<Integer> num1=new Stack<>();
         num1.push(1);
@@ -78,7 +78,30 @@ public class stack {
         for(int i=arr.length-1;i>=0;i--){
             reversed_array.push(arr[i]);
         }
-        System.out.println("Array Elemets:"+arr);
         System.out.println("Reversed array using stack: "+reversed_array);
+
+        //6th
+        String word=sc.nextLine();
+        word.toLowerCase();
+        Stack<Character> stack3=new Stack<>();
+        for(int i=0;i<word.length();i++){
+            stack3.push(word.charAt(i));
+        }
+        int left=0;
+        int right=stack3.size()-1;
+        for(int i=0;i<stack3.size();i++){
+            if(left==right || right-left==1){
+                System.out.println("Pallindrome");
+                break;
+            }
+            if(stack3.get(left)!=stack3.get(right)){
+                System.out.println("Not pallindrome");
+                break;
+            }
+            else{
+                left++;
+                right--;
+            }
+        }
     }
 }
