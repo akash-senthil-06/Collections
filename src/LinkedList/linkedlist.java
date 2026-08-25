@@ -114,5 +114,26 @@ public class linkedlist{
         for(int i:list1)
             sum+=i;
         System.out.println("Sum of the elements in list 1 is: "+sum);
+
+        sc.nextLine();
+        //9th
+        LinkedList<String> std_names=new LinkedList<>();
+        LinkedList<Integer> std_marks=new LinkedList<>();
+        for(int i=1;i<=5;i++){
+            System.out.print("Enter the student name "+i+": ");
+            String name=sc.next();
+            std_names.add(name);
+            System.out.print("Enter the student mark "+i+": ");
+            int mark=sc.nextInt();
+            std_marks.add(mark);
+        }
+        // for(int i=1;i<=5;i++){
+            
+        // }
+        for(int i=1;i<6;i++){
+            System.out.println("Student Name "+ i+" : "+std_names.get(i-1));
+            System.out.println("Student Mark "+ i+" : "+std_marks.get(i-1));
+            System.out.println();
+        }
     }
 }
