@@ -1,5 +1,6 @@
 package LinkedList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Queue;
@@ -79,5 +80,33 @@ public class linkedlist{
         System.out.println("After 2nd navigation:"+history);
         history.pop();
         System.out.println("After 3rd navigation:"+history);
+
+        //7th
+        LinkedList<Integer> list1=new LinkedList<>(List.of(1,2,3,4,5,6,7));
+        System.out.println("1st Approach");
+        LinkedList<Integer> result=new LinkedList<>();
+        for(int i=list1.size()-1;i>=0;i--){
+            result.add(list1.get(i));
+        }
+        System.out.println("Before Reversing"+list1);
+        System.out.println("After Reversing"+result);
+
+        System.out.println("2nd Approach");
+        System.out.println("Before Reversing"+list1);
+        int first=0;
+        int last=list1.size()-1;
+        int temp=0;
+        for(int i:list1){
+            if(first-last==1||first==last)
+                break;
+            if(first!=last){
+                temp=list1.get(last);
+                list1.set(first,temp);
+                list1.set(last,i);
+                first++;
+                last--;
+            }
+        }
+        System.out.println("After reversing: "+list1);
     }
 }
