@@ -1,6 +1,13 @@
 package Stack;
 import java.util.Stack;
 public class stack {
+
+    public static Stack<String> two_pops(Stack<String> a){
+        for(int i=0;i<2;i++){
+            a.pop();
+        }
+        return a;
+    }
     public static void main(String[] args) {
         
         //1st
@@ -16,5 +23,22 @@ public class stack {
             num1.pop();
             System.out.println("After popping element "+(i+1)+" :"+num1);
         }
+
+        //2nd
+        Stack<String> cities=new Stack<>();
+        cities.push("Trichy");
+        cities.push("Tanjore");
+        cities.push("Chennai");
+        cities.push("Madurai");
+        // int cities_size=cities.size();
+        // for(int i=0;i<cities_size;i++){
+        //     if(cities.isEmpty())
+        //         break;
+        //     System.out.println(cities.peek());
+        //     two_pops(cities);
+        // }
+        System.out.println("Peek city: "+cities.peek());
+        two_pops(cities);
+        System.out.println("After popping two cities: "+cities);
     }
 }
