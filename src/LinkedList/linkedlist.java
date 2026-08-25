@@ -66,5 +66,18 @@ public class linkedlist{
         System.out.println("After serving customer 4:"+bank);
         bank.poll();
         System.out.println("After serving customer 5:"+bank);
+
+        //6th
+        LinkedList<String> history=new LinkedList<>();
+        history.push("Google");
+        history.push("Youtube");
+        history.push("Github");
+        System.out.println("Browser History:"+history);
+        history.pop();
+        System.out.println("After 1st navigation:"+history);
+        history.pop();
+        System.out.println("After 2nd navigation:"+history);
+        history.pop();
+        System.out.println("After 3rd navigation:"+history);
     }
 }
