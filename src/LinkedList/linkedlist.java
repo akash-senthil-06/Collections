@@ -108,5 +108,11 @@ public class linkedlist{
             }
         }
         System.out.println("After reversing: "+list1);
+
+        //8th
+        int sum=0;
+        for(int i:list1)
+            sum+=i;
+        System.out.println("Sum of the elements in list 1 is: "+sum);
     }
 }
