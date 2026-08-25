@@ -57,16 +57,11 @@ public class linkedlist{
         bank.add("Customer4");
         bank.add("Customer5");
         System.out.println("Initially:"+bank);
-        bank.poll();
-        System.out.println("After serving customer 1:"+bank);
-        bank.poll();
-        System.out.println("After serving customer 2:"+bank);
-        bank.poll();
-        System.out.println("After serving customer 3:"+bank);
-        bank.poll();
-        System.out.println("After serving customer 4:"+bank);
-        bank.poll();
-        System.out.println("After serving customer 5:"+bank);
+        int banksize=bank.size();
+        for(int i=0;i<banksize;i++){
+            bank.poll();
+            System.out.println("After serving customer "+(i+1)+":"+bank);
+        }
 
         //6th
         LinkedList<String> history=new LinkedList<>();
@@ -74,12 +69,12 @@ public class linkedlist{
         history.push("Youtube");
         history.push("Github");
         System.out.println("Browser History:"+history);
-        history.pop();
-        System.out.println("After 1st navigation:"+history);
-        history.pop();
-        System.out.println("After 2nd navigation:"+history);
-        history.pop();
-        System.out.println("After 3rd navigation:"+history);
+        int historysize=history.size();
+        for(int i=0;i<historysize;i++){
+            history.pop();
+            System.out.println("After "+(i+1)+" navigation:"+history);
+        }
+        
 
         //7th
         LinkedList<Integer> list1=new LinkedList<>(List.of(1,2,3,4,5,6,7));
@@ -117,21 +112,21 @@ public class linkedlist{
 
         sc.nextLine();
         //9th
-        // LinkedList<String> std_names=new LinkedList<>();
-        // LinkedList<Integer> std_marks=new LinkedList<>();
-        // for(int i=1;i<=5;i++){
-        //     System.out.print("Enter the student name "+i+": ");
-        //     String name=sc.next();
-        //     std_names.add(name);
-        //     System.out.print("Enter the student mark "+i+": ");
-        //     int mark=sc.nextInt();
-        //     std_marks.add(mark);
-        // }
-        // for(int i=1;i<6;i++){
-        //     System.out.println("Student Name "+ i+" : "+std_names.get(i-1));
-        //     System.out.println("Student Mark "+ i+" : "+std_marks.get(i-1));
-        //     System.out.println();
-        // }
+        LinkedList<String> std_names=new LinkedList<>();
+        LinkedList<Integer> std_marks=new LinkedList<>();
+        for(int i=1;i<=5;i++){
+            System.out.print("Enter the student name "+i+": ");
+            String name=sc.next();
+            std_names.add(name);
+            System.out.print("Enter the student mark "+i+": ");
+            int mark=sc.nextInt();
+            std_marks.add(mark);
+        }
+        for(int i=1;i<6;i++){
+            System.out.println("Student Name "+ i+" : "+std_names.get(i-1));
+            System.out.println("Student Mark "+ i+" : "+std_marks.get(i-1));
+            System.out.println();
+        }
 
         //10th
         Queue<String> documents=new LinkedList<>(List.of("Document 1","Document 2","Document 3","Document 4","Document 5"));
