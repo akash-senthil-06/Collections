@@ -117,23 +117,29 @@ public class linkedlist{
 
         sc.nextLine();
         //9th
-        LinkedList<String> std_names=new LinkedList<>();
-        LinkedList<Integer> std_marks=new LinkedList<>();
-        for(int i=1;i<=5;i++){
-            System.out.print("Enter the student name "+i+": ");
-            String name=sc.next();
-            std_names.add(name);
-            System.out.print("Enter the student mark "+i+": ");
-            int mark=sc.nextInt();
-            std_marks.add(mark);
-        }
+        // LinkedList<String> std_names=new LinkedList<>();
+        // LinkedList<Integer> std_marks=new LinkedList<>();
         // for(int i=1;i<=5;i++){
-            
+        //     System.out.print("Enter the student name "+i+": ");
+        //     String name=sc.next();
+        //     std_names.add(name);
+        //     System.out.print("Enter the student mark "+i+": ");
+        //     int mark=sc.nextInt();
+        //     std_marks.add(mark);
         // }
-        for(int i=1;i<6;i++){
-            System.out.println("Student Name "+ i+" : "+std_names.get(i-1));
-            System.out.println("Student Mark "+ i+" : "+std_marks.get(i-1));
-            System.out.println();
+        // for(int i=1;i<6;i++){
+        //     System.out.println("Student Name "+ i+" : "+std_names.get(i-1));
+        //     System.out.println("Student Mark "+ i+" : "+std_marks.get(i-1));
+        //     System.out.println();
+        // }
+
+        //10th
+        Queue<String> documents=new LinkedList<>(List.of("Document 1","Document 2","Document 3","Document 4","Document 5"));
+        System.out.println("Initial Documents:"+documents);
+        int j=documents.size();
+        for(int i=0;i<j;i++){
+            System.out.println(documents.poll());
+            System.out.println("Remaining Documents : "+documents.size());
         }
     }
 }
