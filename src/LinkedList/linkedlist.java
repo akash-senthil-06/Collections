@@ -1,9 +1,10 @@
 package LinkedList;
 import java.util.LinkedList;
-
+import java.util.Scanner;
 public class linkedlist{
     public static void main(String[] args) {
 
+        Scanner sc=new Scanner(System.in);
         //1st
         LinkedList<String> subjects=new LinkedList<>();
         subjects.add("Tamil");
@@ -38,5 +39,10 @@ public class linkedlist{
         colors.removeFirst();
         colors.removeLast();
         System.out.println("After removing: "+colors);
+
+        //4th
+        System.out.print("Enter a element: ");
+        int element=sc.nextInt();
+        System.err.println(nums.contains(element)?"Yes":"No");
     }
 }
