@@ -50,5 +50,26 @@ public class stack {
         stack1.push(3);
         System.out.println("Ater pushing: ");
         System.out.println(stack1.isEmpty()?"The stack is empty":"The stack is not empty");
+
+        //4th
+        Stack<Integer> stack2=new Stack<>();
+        stack2.push(1);
+        stack2.push(2);
+        stack2.push(3);
+        stack2.push(4);
+        stack2.push(5);
+        stack2.push(6);
+        stack2.push(7);
+        stack2.push(8);
+        stack2.push(9);
+        stack2.push(10);
+        System.out.println("Size of the stack:"+stack2.size());
+        while(true){
+            if(stack2.size()==3){
+                System.out.println(stack2);
+                break;
+            }
+            stack2.pop();
+        }
     }
 }
